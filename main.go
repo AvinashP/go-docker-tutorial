@@ -7,10 +7,10 @@ import (
 )
 
 func main() {
-	fmt.Println("Go docker tutorial")
+	fmt.Println("Welcome to Go sample page!")
 
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-		fmt.Fprintf(w, "Hellow world!")
+		fmt.Fprintf(w, "App has successfully been deployed to digital ocean.")
 	})
 
 	log.Fatal(http.ListenAndServe(":8081", nil))
